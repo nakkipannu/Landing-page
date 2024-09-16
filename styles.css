@@ -1,3 +1,94 @@
 body {
     height: 100vh;
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    background-color: #1F2937;
+}
+
+.header h1 {
+    color: #F9FAF8;
+    font-size: 24px;
+}
+
+.hero {
+    display: flex;
+    background-color: #1F2937;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 {
+    color: #F9FAF8;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #e5e5e5;
+}
+
+.hero button {
+    color: #F9FAF8;
+    background-color: #3882F6;
+    border: none; 
+    border-radius: 3px;
+    padding: 3px 20px 3px 20px;
+}
+
+.cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+}
+
+.cta,img {
+    padding: 50px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonial {
+    display: flex;
+    justify-content: center;
+}
+.testimonialtext  {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.testimonialtext p {
+    color: #1F2937;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 100;
+}
+
+.testimonialtext h2 {
+    align-self: flex-end;
+}
+
+.footer {
+    background-color: #1F2937;
+}
+
+.footer h6 {
+    color: #E5E7EB;
+}
+
+ul {
+    display: flex;
+    gap: 16px;
+    list-style-type: none;
 }
