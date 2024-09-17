@@ -1,17 +1,15 @@
 body {
     height: 100vh;
     margin: 0;
+    font-family: Roboto;
 }
 
 .header {
+    color: #F9FAF8;
+    font-size: 24px;
     display: flex;
     justify-content: space-around;
     background-color: #1F2937;
-}
-
-.header h1 {
-    color: #F9FAF8;
-    font-size: 24px;
 }
 
 .hero {
