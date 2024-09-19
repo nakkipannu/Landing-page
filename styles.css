@@ -133,20 +133,24 @@ ul {
     align-self: flex-end;
 }
 
+
 .cta {
     display: flex;
-    height: 400px;
     justify-content: center;
     align-items: center;
+    height: 400px;
 }
 
-.ctacontent {
+.ctachild {
     display: flex;
-    border: 1px solid red;
+    align-items: center;
     background-color: #3882F6;
     border-radius: 10px;
     padding: 20px 50px 20px 50px;
-}   
+}
+
+
+
 
 
 button {
