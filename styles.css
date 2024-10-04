@@ -1,85 +1,78 @@
-
+* {
+    outline: 1px solid red;
+}
 
 body {
     display: flex;
     flex-direction: column;
-    margin: 0;
-    font-family: Roboto;
+    font-family: 'roboto';
+    margin: 0px;
 }
 
-
+.container {
+    display: flex;
+    justify-content: center;
+    background-color: #1F2937;
+}
 
 .header {
     display: flex;
-    flex: 1;
-    color: #F9FAF8;
-    font-size: 24px;
-    justify-content: space-around;
+    align-self: center;
+    flex-direction: column;
+    width: 1200px;
     background-color: #1F2937;
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
-
-li a{
-    color: #E5E7EB;
-    font-size: 18px;
-    text-decoration: none;
+ul {
+    display: flex;
+    list-style-type: none;
 }
 
-ul {
-    list-style-type: none;
-    display: flex;
+li a {
+    padding: 10px;
+    font-size: 18px;
+    color: #F9FAF8;
 }
 
 .hero {
     display: flex;
     flex-wrap: wrap;
-    flex: 1 1 0;
-    background-color: #1F2937;
     height: 600px;
-    gap: 50px;
-    padding: 100px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    gap: 32px;
 }
 
 .herotext {
     display: flex;
     flex-direction: column;
-    width: 450px;
-    height: 305px;
 }
 
-.heroimg {
-    display: flex;
-    height: 305px;
-}
-
-.hero h1 {
+.herobutton {
     color: #F9FAF8;
-    font-size: 48px;
-    font-weight: 900;
-    margin: 0px
-}
-
-.hero p {
-    font-size: 18px;
-    color: #e5e5e5;
-}
-
-.hero button {
-    color: #F9FAF8;
-    font-weight: bold;
-    background-color: #3882F6;
-    border: none; 
-    border-radius: 3px;
-    padding: 3px 20px 3px 20px;
     align-self: flex-start;
+    font-weight: 600;
+    background-color: #3882f6;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 20px;
 }
 
-.infoparent {
+.herotext p {
+    font-size: 18px;
+    color: #F9FAF8;
+}
+
+.container2 {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 600px;
@@ -87,97 +80,112 @@ ul {
 
 .cards {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    gap: 64px;
+    gap: 32px;
 }
 
-.cards div {
+.infocard {
     display: flex;
-    border: solid #3882F6;;
-    border-radius: 20px;
+    flex-direction: column;
+    width: 200px;
+}
+
+.card {
+    display: flex;
     width: 200px;
     height: 200px;
+    border-radius: 20px;
+    border: solid 1px #1F2937;
 }
 
-
-.parenttestimonial {
+.info {
     display: flex;
-    flex: 1;
-    height: 500px;
+    flex-direction: column;
+    text-align: center;
+}
+
+.container3 {
+    display: flex;
     justify-content: center;
-    background-color: #E5E7EB;
+    align-items: center;
+    background-color: #E5e7eb;
+    height: 600px;;
 }
 
 .testimonial {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    width: 1200px;
-    padding: 10px;
-    height: 600px;
+    align-items: flex-end;
+    width: 800px;
 }
 
-.testimonial p {
-    color: #1F2937;
+.thor {
+    margin: 0px
+}
+
+.quote {
     font-size: 36px;
     font-style: italic;
     font-weight: 100;
-    margin: 0;
+    color: #1F2937;
+    margin: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
-
-.testimonial h2 {
-    align-self: flex-end;
-}
-
 
 .cta {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 400px;
+    height: 600px;
 }
 
 .ctachild {
     display: flex;
     justify-content: space-between;
-    gap: 200px;
-    background-color: #3882F6;
-    border-radius: 5px;
-    padding: 50px 100px 50px 100px;
+    align-items: center;
+    width: 600px;
+    padding: 30px 60px 30px 60px; 
+    background-color: #3882f6;
 }
 
-.ctatext {
-    display: flex;
-    flex-direction: column;
-    color: #e5e5e5;
+.ctabutton {
+    color: #F9FAF8;
+    font-weight: 600;
+    background-color: #3882f6;
+    border: 1px solid #F9FAF8;
+    border-radius: 3px;
+    padding: 5px 20px;
 }
 
-h5, h4  {
-    margin: 0;
-}
+/* font styling */
 
-h4 {
+h1 {
+    font-size: 49px;
+    color: #F9FAF8;
     font-weight: 900;
 }
 
-button {
-    background-color: #3882F6;
-    padding: 5px 20px 5px 20px;
-    border-radius: 3px;
-    color: #e5e5e5;
-    font-weight: 700;
+h2 {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 900;
 }
 
-.footer {
-    display: flex;
-    flex: 1;
-    justify-content: center;
-    background-color: #1F2937;
-    padding: 10px 10px;
+h4 {
+    margin: 0px;
+    color: #F9FAF8;
+    font-weight: 900;
 }
 
-.footer h6 {
-    color: #E5E7EB;
+h5 {
+    margin: 0px;
+    color: #F9FAF8;
+    font-weight: 400;
+}
+
+h6 {
+    color: #F9FAF8;
+    font-weight: 400;
 }
